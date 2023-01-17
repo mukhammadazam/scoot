@@ -1,0 +1,15 @@
+@import '../mixin';
+header {}
+
+.nav {
+    padding: 22px 0;
+    @include flexfunksiya (row, center, space-between, wrap);
+    &__list {
+        @include flexfunksiya (row, center, center, wrap);
+        gap: 32px;
+        &--item {}
+        .logo {
+            padding-right: 28px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1126px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@import './mixin.scss';
+@import './veraybels';
+@import './all-block/all-blocks.scss';
