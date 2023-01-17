@@ -44,6 +44,26 @@
   flex-wrap: wrap;
   gap: 32px;
 }
+.nav__list--item a {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
 .nav__list .logo {
   padding-right: 28px;
+}
+.nav__btn {
+  background: #FCB72B;
+  padding: 14px 39px;
+  border: none;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

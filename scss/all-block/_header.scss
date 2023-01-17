@@ -7,9 +7,28 @@ header {}
     &__list {
         @include flexfunksiya (row, center, center, wrap);
         gap: 32px;
-        &--item {}
+        &--item a {
+            font-family: $mono;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            color: $text-color;
+        }
         .logo {
             padding-right: 28px;
         }
+    }
+    &__btn {
+        background: $btn-color;
+        padding: 14px 39px;
+        border: none;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
     }
 }
