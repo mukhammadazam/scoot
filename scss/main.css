@@ -203,7 +203,7 @@ nav {
 .hero__flex--logo {
   position: absolute;
   left: -200px;
-  top: 40px;
+  top: 35px;
 }
 .hero__flex--logo1 {
   position: absolute;
@@ -427,6 +427,7 @@ nav {
     display: none;
   }
   .hero1__list {
+    padding-bottom: 0;
     display: block;
   }
   .hero1__list--item {
@@ -449,6 +450,28 @@ nav {
 }
 .hero2__list {
   padding-top: 83px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: Space-between;
+  flex-wrap: wrap;
+}
+.hero2__list .cart1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: Space-between;
+  flex-wrap: wrap;
+}
+.hero2__list .odam {
+  position: relative;
+  right: -200px;
+}
+.hero2__list .xamyon {
+  position: relative;
+  right: -200px;
+}
+.hero2__list .cart2 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -482,7 +505,13 @@ nav {
 .hero2__list .bino1 {
   display: none;
 }
-.hero2__list .xayon1 {
+.hero2__list .bino2 {
+  display: none;
+}
+.hero2__list .bino3 {
+  display: none;
+}
+.hero2__list .xamyon1 {
   display: none;
 }
 .hero2__logo {
@@ -518,19 +547,37 @@ nav {
 .hero2__logo6 {
   z-index: -1;
   position: absolute;
-  top: 1120px;
+  top: 1200px;
   right: -210px;
+}
+.hero2 .odam2 {
+  display: none;
+}
+.hero2 .odam3 {
+  display: none;
+}
+.hero2 .xamyon2 {
+  display: none;
+}
+.hero2 .xamyon3 {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
   .hero2 {
     position: relative;
   }
-  .hero2__bttn {
-    max-width: 180px;
-    width: 100%;
-    display: block;
-    margin: 0 auto;
+  .hero2__bttn1 {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    border: none;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 14px 39px;
+    background: #FCB72B;
   }
   .hero2__list {
     padding-top: 83px;
@@ -546,7 +593,6 @@ nav {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column-reverse;
   }
   .hero2__list .cart2 {
     display: flex;
@@ -556,8 +602,9 @@ nav {
     flex-wrap: wrap;
   }
   .hero2__list--item {
-    max-width: 768px;
+    max-width: 700px;
     margin: 0 auto;
+    text-align: center;
   }
   .hero2__list .item-title1 {
     font-family: "Space Mono";
@@ -621,10 +668,130 @@ nav {
     position: relative;
     left: -65px;
   }
+  .hero2 .bino2 {
+    display: none;
+  }
+  .hero2 .bino3 {
+    display: none;
+  }
   .hero2 .xamyon1 {
     position: relative;
     right: -69px;
     display: block;
     padding-bottom: 64px;
+  }
+  .hero2 .xamyon2 {
+    display: none;
+  }
+  .hero2 .xamyon3 {
+    display: none;
+  }
+  .hero2 .odam2 {
+    display: none;
+  }
+  .hero2 .odam3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero2 {
+    padding-bottom: 120px;
+    position: relative;
+  }
+  .hero2__bttn1 {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    border: none;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 14px 39px;
+    background: #FCB72B;
+  }
+  .hero2__list {
+    padding-top: 83px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero2__list .cart1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .hero2__list .cart2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero2__list--item {
+    max-width: 768px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .hero2__list .item-title1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .hero2__list .item-text1 {
+    max-width: 573px;
+    padding-bottom: 40px;
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    text-align: center;
+  }
+  .hero2__list .titi {
+    padding-top: 64px;
+  }
+  .hero2 .odam1 {
+    display: none;
+  }
+  .hero2 .bino1 {
+    display: none;
+  }
+  .hero2 .xamyon1 {
+    display: none;
+  }
+  .hero2 .odam2 {
+    display: block;
+    padding-bottom: 56px;
+  }
+  .hero2 .odam3 {
+    display: block;
+    position: absolute;
+    top: 190px;
+    right: -80px;
+  }
+  .hero2 .bino2 {
+    display: block;
+  }
+  .hero2 .bino3 {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -80px;
+  }
+  .hero2 .xamyon2 {
+    display: block;
+    padding-bottom: 56px;
+  }
+  .hero2 .xamyon3 {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: -50px;
   }
 }/*# sourceMappingURL=main.css.map */
