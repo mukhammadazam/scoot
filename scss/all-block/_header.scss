@@ -8,6 +8,9 @@ nav {
 }
 
 .nav {
+    input {
+        display: none;
+    }
     @include flexfunksiya (row, center, Space-between, nowrap);
     .list {
         @include flexfunksiya (row, center, Space-between, nowrap);
@@ -93,6 +96,12 @@ nav {
             top: 576px;
             left: 72px;
             transform: translatex(-200%);
+        }
+        input:checked~.list .nav__list {
+            transform: translatex(0);
+        }
+        input {
+            display: none;
         }
     }
 }

@@ -1,0 +1,17 @@
+@import '../mixin';
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and ( min--moz-device-pixel-ratio: 2),
+only screen and ( -o-min-device-pixel-ratio: 2/1),
+only screen and ( min-device-pixel-ratio: 2),
+only screen and ( min-resolution: 192dpi),
+only screen and ( min-resolution: 2dppx) {
+    .section1 {
+        @include BG (url(../../imges/Bitmap2x.jpg), no-repeat, 100%, center);
+    }
+    .foooter {
+        @include BG (url(../../imges/Mask2x.png), no-repeat, 100%, center);
+    }
+    footer {
+        @include BG (url(../../imges/Mask2x.png), no-repeat, 100%, center);
+    }
+}

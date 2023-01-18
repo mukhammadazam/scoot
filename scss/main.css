@@ -48,6 +48,9 @@ nav {
   justify-content: Space-between;
   flex-wrap: nowrap;
 }
+.nav input {
+  display: none;
+}
 .nav .list {
   display: flex;
   flex-direction: row;
@@ -155,6 +158,12 @@ nav {
     top: 576px;
     left: 72px;
     transform: translatex(-200%);
+  }
+  .nav input:checked ~ .list .nav__list {
+    transform: translatex(0);
+  }
+  .nav input {
+    display: none;
   }
 }
 @media screen and (max-width: 400px) {
@@ -785,7 +794,7 @@ nav {
     display: block;
     position: absolute;
     top: 190px;
-    right: -80px;
+    right: -35px;
   }
   .hero2 .bino2 {
     display: block;
@@ -794,7 +803,7 @@ nav {
     display: block;
     position: absolute;
     top: 0px;
-    left: -80px;
+    left: -35px;
   }
   .hero2 .xamyon2 {
     display: block;
@@ -804,7 +813,7 @@ nav {
     display: block;
     position: absolute;
     top: 0px;
-    right: -50px;
+    right: -35px;
   }
 }
 .foooter {
@@ -950,7 +959,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   footer {
-    padding: 32px 0;
+    padding: 2px 0;
     background-image: url(../../imges/tabletfooooter.png);
     background-repeat: no-repeat;
     background-size: 100%;
