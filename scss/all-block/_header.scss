@@ -1,11 +1,25 @@
 @import '../mixin';
-header {}
+nav {
+    padding: 22px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100000000;
+    background-color: #fff;
+}
 
 .nav {
-    padding: 22px 0;
-    @include flexfunksiya (row, center, space-between, wrap);
+    @include flexfunksiya (row, center, Space-between, nowrap);
+    .list {
+        @include flexfunksiya (row, center, Space-between, nowrap);
+        &__burger {
+            display: none;
+        }
+        &__logo {
+            padding-right: 58px;
+        }
+    }
     &__list {
-        @include flexfunksiya (row, center, center, wrap);
+        @include flexfunksiya (row, center, center, nowrap);
         gap: 32px;
         &--item a {
             font-family: $mono;
@@ -15,20 +29,80 @@ header {}
             line-height: 25px;
             color: $text-color;
         }
-        .logo {
-            padding-right: 28px;
-        }
     }
     &__btn {
         background: $btn-color;
-        padding: 14px 39px;
         border: none;
-        font-family: 'Space Mono';
+        padding: 14px 39px;
+        font-family: $mono;
         font-style: normal;
         font-weight: 700;
         font-size: 15px;
         line-height: 25px;
-        text-align: center;
-        color: #FFFFFF;
+        color: $h1color;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .nav {
+        @include flexfunksiya (column, start, start, nowrap);
+        .list {
+            position: relative;
+            @include flexfunksiya (column, center, start, nowrap);
+            &__img {
+                @include flexfunksiya (row, center, start, nowrap);
+                gap: 198px;
+            }
+            &__burger {
+                display: block;
+                padding-left: 22px;
+            }
+            &__logo {
+                padding-right: 58px;
+            }
+        }
+        &__list {
+            transform: translatex(-200%);
+            background: #333A44;
+            padding-top: 64px;
+            padding-left: 32px;
+            position: absolute;
+            padding-right: 135px;
+            padding-bottom: 339px;
+            top: 87px;
+            left: 0;
+            @include flexfunksiya (column, center, center, nowrap);
+            gap: 32px;
+            &--item a {
+                font-family: $mono;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 25px;
+                color: $text-color;
+            }
+        }
+        &__btn {
+            position: absolute;
+            top: 576px;
+            left: 72px;
+            transform: translatex(-200%);
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .nav {
+        .list {
+            &__img {
+                gap: 98px;
+            }
+        }
     }
 }

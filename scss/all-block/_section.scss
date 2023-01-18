@@ -1,0 +1,137 @@
+.section1 {
+    @include BG (url(../../imges/Bitmap.png), no-repeat, 100%, center);
+}
+
+.hero {
+    padding-bottom: 282px;
+    &__title {
+        padding-top: 249px;
+        font-family: $mono;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        color: $h1color;
+        max-width: 600px;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    &__flex {
+        position: relative;
+        @include flexfunksiya (row, start, center, nowrap);
+        &--text {
+            max-width: 405px;
+            width: 100%;
+            font-family: $desa;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: $h1color;
+            padding-bottom: 40px;
+        }
+        &--logo {
+            position: absolute;
+            left: -200px;
+            top: 40px;
+        }
+        &--logo1 {
+            padding-top: 40px;
+            padding-left: 40px;
+        }
+        &--logo1 {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .section1 {
+        padding: 0;
+        @include BG (url(../../imges/Bitmaptablet.png), no-repeat, 100%, center);
+    }
+    .hero {
+        padding: 0;
+        padding-bottom: 300px;
+        &__title {
+            padding: 0;
+            padding-top: 220px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        &__flex {
+            position: relative;
+            @include flexfunksiya (column, center, center, nowrap);
+            &--text {
+                max-width: 573px;
+                width: 100%;
+                padding: 0;
+                padding-top: 24px;
+                padding-bottom: 32px;
+                text-align: center;
+            }
+            &--btn {
+                display: block;
+                max-width: 180px;
+                width: 100%;
+                margin: 0 auto;
+            }
+            &--logo {
+                display: none;
+            }
+            &--logo1 {
+                display: none;
+            }
+            &--logo2 {
+                display: block;
+                position: absolute;
+                bottom: -160px;
+                left: -170px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .section1 {
+        padding: 0;
+        @include BG (url(../../imges/Bitmapmobayl.png), no-repeat, 100%, center);
+    }
+    .hero {
+        padding: 0;
+        padding-bottom: 300px;
+        &__title {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &__flex {
+            position: relative;
+            @include flexfunksiya (column, center, center, nowrap);
+            &--text {
+                max-width: 573px;
+                width: 100%;
+                padding: 0;
+                padding-top: 24px;
+                padding-bottom: 32px;
+                text-align: center;
+            }
+            &--btn {
+                transform: translatex(0);
+                top: 190px;
+                left: 50px;
+            }
+            &--logo {
+                display: none;
+            }
+            &--logo1 {
+                display: none;
+            }
+            &--logo2 {
+                display: block;
+                position: absolute;
+                bottom: -160px;
+                left: -370px;
+            }
+        }
+    }
+}
