@@ -265,6 +265,18 @@
 
 .hero2 {
     position: relative;
+    &__bttn1 {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        border: none;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 14px 39px;
+        background: #FCB72B;
+    }
     &__list {
         padding-top: 83px;
         @include flexfunksiya (row, center, Space-between, wrap);
@@ -490,7 +502,6 @@
 
 @media screen and (max-width:576px) {
     .hero2 {
-        padding-bottom: 120px;
         position: relative;
         &__bttn1 {
             font-family: 'Space Mono';
@@ -575,6 +586,68 @@
             position: absolute;
             top: 0px;
             right: -50px;
+        }
+    }
+}
+
+.foooter {
+    margin-top: 178px;
+    padding: 102px 0;
+    @include BG (url(../../imges/footer.png), no-repeat, 100%, center);
+}
+
+.hero3 {
+    @include flexfunksiya (row, center, Space-between, wrap);
+    &__title {
+        max-width: 450px;
+        width: 100%;
+        font-family: $mono;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: $h1color;
+    }
+    &__right {
+        @include flexfunksiya (row, center, center, wrap);
+        gap: 18px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .foooter {
+        margin-top: 104px;
+        padding: 62px 0;
+        @include BG (url(../../imges/Maskfmobayl.png), no-repeat, 100%, center);
+    }
+    .hero3 {
+        @include flexfunksiya (column, center, center, wrap);
+        &__title {
+            padding-bottom: 40px;
+            text-align: center;
+        }
+        &__right {
+            @include flexfunksiya (row, center, center, wrap);
+            gap: 18px;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .foooter {
+        padding: 30px 0;
+        @include BG (url(../../imges/Maskfmobayl.png), no-repeat, 100%, center);
+    }
+    .hero3 {
+        @include flexfunksiya (column, center, center, wrap);
+        &__title {
+            max-width: 311px;
+            font-size: 32px;
+            line-height: 32px;
+        }
+        &__right {
+            @include flexfunksiya (row, center, center, wrap);
+            gap: 18px;
         }
     }
 }

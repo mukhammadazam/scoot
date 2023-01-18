@@ -448,6 +448,18 @@ nav {
 .hero2 {
   position: relative;
 }
+.hero2__bttn1 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  border: none;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 14px 39px;
+  background: #FCB72B;
+}
 .hero2__list {
   padding-top: 83px;
   display: flex;
@@ -695,7 +707,6 @@ nav {
 }
 @media screen and (max-width: 576px) {
   .hero2 {
-    padding-bottom: 120px;
     position: relative;
   }
   .hero2__bttn1 {
@@ -793,5 +804,98 @@ nav {
     position: absolute;
     top: 0px;
     right: -50px;
+  }
+}
+.foooter {
+  margin-top: 178px;
+  padding: 102px 0;
+  background-image: url(../../imges/footer.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.hero3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: Space-between;
+  flex-wrap: wrap;
+}
+.hero3__title {
+  max-width: 450px;
+  width: 100%;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+.hero3__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .foooter {
+    margin-top: 104px;
+    padding: 62px 0;
+    background-image: url(../../imges/Maskfmobayl.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+  .hero3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero3__title {
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .hero3__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .foooter {
+    padding: 30px 0;
+    background-image: url(../../imges/Maskfmobayl.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+  .hero3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero3__title {
+    max-width: 311px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .hero3__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
   }
 }/*# sourceMappingURL=main.css.map */
