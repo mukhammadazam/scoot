@@ -1,4 +1,4 @@
-.section1 {
+.section {
     @include BG (url(../../imges/Bitmap.png), no-repeat, 100%, center);
 }
 
@@ -49,7 +49,7 @@
 }
 
 @media screen and (max-width:768px) {
-    .section1 {
+    .section {
         padding: 0;
         @include BG (url(../../imges/Bitmaptablet.png), no-repeat, 100%, center);
     }
@@ -99,7 +99,7 @@
 }
 
 @media screen and (max-width:576px) {
-    .section1 {
+    .section {
         padding: 0;
         @include BG (url(../../imges/Bitmapmobayl.png), no-repeat, 100%, center);
     }

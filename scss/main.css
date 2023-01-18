@@ -168,10 +168,10 @@ nav {
 }
 @media screen and (max-width: 400px) {
   .nav .list__img {
-    gap: 98px;
+    gap: 50px;
   }
 }
-.section1 {
+.section {
   background-image: url(../../imges/Bitmap.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -225,7 +225,7 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  .section1 {
+  .section {
     padding: 0;
     background-image: url(../../imges/Bitmaptablet.png);
     background-repeat: no-repeat;
@@ -281,7 +281,7 @@ nav {
   }
 }
 @media screen and (max-width: 576px) {
-  .section1 {
+  .section {
     padding: 0;
     background-image: url(../../imges/Bitmapmobayl.png);
     background-repeat: no-repeat;
