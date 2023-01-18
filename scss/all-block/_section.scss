@@ -124,7 +124,7 @@
             &--btn {
                 transform: translatex(0);
                 top: 190px;
-                left: 79px;
+                left: 125px;
             }
             &--logo {
                 display: none;
@@ -155,6 +155,16 @@
 }
 
 .hero1 {
+    position: relative;
+    &__logo {
+        position: absolute;
+        left: -195px;
+        top: 140px;
+        z-index: -1;
+    }
+    &__logo1 {
+        display: none;
+    }
     &__list {
         @include flexfunksiya (row, center, center, wrap);
         gap: 30px;
@@ -182,5 +192,111 @@
                 color: $text-color;
             }
         }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero1 {
+        &__logo {
+            display: none;
+        }
+        &__logo1 {
+            display: block;
+            position: absolute;
+            left: 102px;
+            top: 90px;
+            z-index: -1;
+        }
+        &__list {
+            @include flexfunksiya (column, center, center, wrap);
+            gap: 30px;
+            padding-bottom: 147px;
+            padding-top: 100px;
+            &--item {
+                column-gap: 79px;
+                row-gap: 40px;
+                @include flexfunksiya (row, center, Space-between, nowrap);
+                .title {
+                    font-family: $mono;
+                    padding-top: 40px;
+                    padding-bottom: 27px;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: $headeding;
+                }
+                .text {
+                    max-width: 350px;
+                    width: 100%;
+                    font-family: $desa;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .hero1 {
+        &__logo1 {
+            display: none;
+        }
+        &__list {
+            display: block;
+            &--item {
+                padding-bottom: 48px;
+                @include flexfunksiya (column, center, center, nowrap);
+                .title {
+                    text-align: center;
+                }
+                .text {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.hero2 {
+    position: relative;
+    &__list {
+        @include flexfunksiya (row, center, Space-between, wrap);
+        .item-title1 {
+            font-family: $mono;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            color: $headeding;
+            max-width: 500px;
+            padding-bottom: 24px;
+            width: 100%;
+        }
+        .item-text1 {
+            max-width: 500px;
+            padding-bottom: 40px;
+            font-family: $desa;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: $text-color;
+        }
+    }
+    &__logo {
+        position: absolute;
+        top: 352px;
+        right: -197px;
+        z-index: 1;
+    }
+    &__logo1 {
+        position: absolute;
+        top: 0px;
+        right: -195px;
     }
 }

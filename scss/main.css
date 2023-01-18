@@ -301,7 +301,7 @@ nav {
   .hero__flex--btn {
     transform: translatex(0);
     top: 190px;
-    left: 79px;
+    left: 125px;
   }
   .hero__flex--logo {
     display: none;
@@ -322,6 +322,18 @@ nav {
     top: 190px;
     left: 62px;
   }
+}
+.hero1 {
+  position: relative;
+}
+.hero1__logo {
+  position: absolute;
+  left: -195px;
+  top: 140px;
+  z-index: -1;
+}
+.hero1__logo1 {
+  display: none;
 }
 .hero1__list {
   display: flex;
@@ -352,4 +364,121 @@ nav {
   font-size: 15px;
   line-height: 25px;
   color: #939CAA;
+}
+
+@media screen and (max-width: 768px) {
+  .hero1__logo {
+    display: none;
+  }
+  .hero1__logo1 {
+    display: block;
+    position: absolute;
+    left: 102px;
+    top: 90px;
+    z-index: -1;
+  }
+  .hero1__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 147px;
+    padding-top: 100px;
+  }
+  .hero1__list--item {
+    -moz-column-gap: 79px;
+         column-gap: 79px;
+    row-gap: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: Space-between;
+    flex-wrap: nowrap;
+  }
+  .hero1__list--item .title {
+    font-family: "Space Mono";
+    padding-top: 40px;
+    padding-bottom: 27px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #495567;
+  }
+  .hero1__list--item .text {
+    max-width: 350px;
+    width: 100%;
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero1__logo1 {
+    display: none;
+  }
+  .hero1__list {
+    display: block;
+  }
+  .hero1__list--item {
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .hero1__list--item .title {
+    text-align: center;
+  }
+  .hero1__list--item .text {
+    text-align: center;
+  }
+}
+.hero2 {
+  position: relative;
+}
+.hero2__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: Space-between;
+  flex-wrap: wrap;
+}
+.hero2__list .item-title1 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #495567;
+  max-width: 500px;
+  padding-bottom: 24px;
+  width: 100%;
+}
+.hero2__list .item-text1 {
+  max-width: 500px;
+  padding-bottom: 40px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+.hero2__logo {
+  position: absolute;
+  top: 352px;
+  right: -197px;
+  z-index: 1;
+}
+.hero2__logo1 {
+  position: absolute;
+  top: 0px;
+  right: -195px;
 }/*# sourceMappingURL=main.css.map */
