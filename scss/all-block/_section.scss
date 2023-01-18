@@ -526,7 +526,6 @@
                 @include flexfunksiya (column-reverse, center, center, wrap);
             }
             &--item {
-                max-width: 768px;
                 margin: 0 auto;
                 position: relative;
             }
@@ -587,6 +586,72 @@
             top: 0px;
             right: -35px;
         }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero2 {
+        &--item {
+            max-width: 768px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .item-title1 {
+            font-size: 32px;
+            line-height: 32px;
+        }
+        .item-text1 {
+            max-width: 573px;
+            padding-bottom: 40px;
+            font-family: $desa;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: $text-color;
+            text-align: center;
+        }
+        .titi {
+            padding-top: 64px;
+        }
+    }
+    .odam1 {
+        display: none;
+    }
+    .bino1 {
+        display: none;
+    }
+    .xamyon1 {
+        display: none;
+    }
+    .odam2 {
+        display: block;
+        padding-bottom: 56px;
+    }
+    .odam3 {
+        display: block;
+        position: absolute;
+        top: 190px;
+        right: -35px;
+    }
+    .bino2 {
+        display: block;
+    }
+    .bino3 {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: -35px;
+    }
+    .xamyon2 {
+        display: block;
+        padding-bottom: 56px;
+    }
+    .xamyon3 {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: -35px;
     }
 }
 
