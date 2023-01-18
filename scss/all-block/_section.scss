@@ -591,8 +591,8 @@
 }
 
 .foooter {
-    margin-top: 178px;
-    padding: 102px 0;
+    margin-top: 100px;
+    padding: 90px 0;
     @include BG (url(../../imges/footer.png), no-repeat, 100%, center);
 }
 
@@ -653,11 +653,11 @@
 }
 
 footer {
-    padding: 32px 0;
     @include BG (url(../../imges/fooooter.png), no-repeat, 100%, center);
 }
 
 .footer {
+    padding: 20px 0;
     @include flexfunksiya (row, center, Space-between, wrap);
     &__wrapper {
         gap: 58px;
@@ -715,45 +715,6 @@ footer {
     footer {
         padding: 32px 0;
         @include BG (url(../../imges/mobayllfoooter.png), no-repeat, 100%, center);
-    }
-    .footer {
-        @include flexfunksiya (column, center, Space-between, wrap);
-        &__wrapper {
-            gap: 58px;
-            @include flexfunksiya (column, center, center, wrap);
-        }
-        &__list {
-            gap: 32px;
-            @include flexfunksiya (column, center, center, wrap);
-            &--item {
-                font-family: $mono;
-                font-style: normal;
-                font-weight: 700;
-                font-size: 15px;
-                line-height: 25px;
-                color: $text-color;
-            }
-        }
-        &__list1 {
-            padding-top: 80px;
-            @include flexfunksiya (row, center, center, wrap);
-            gap: 24px;
-        }
-    }
-}
-
-@media screen and (max-width:391px) {
-    .section1 {
-        overflow-x: hidden;
-        max-width: 400px;
-        margin: 0 auto;
-        padding: 0;
-        @include BG (url(../../imges/Bitmapmobayl.png), no-repeat, 100%, end);
-    }
-    footer {
-        max-width: 390px;
-        margin: 0 auto;
-        margin-bottom: 170px;
     }
     .footer {
         @include flexfunksiya (column, center, Space-between, wrap);
