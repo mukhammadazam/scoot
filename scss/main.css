@@ -844,7 +844,7 @@ nav {
 @media screen and (max-width: 768px) {
   .foooter {
     margin-top: 104px;
-    padding: 62px 0;
+    padding: 40px 0;
     background-image: url(../../imges/Maskfmobayl.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -872,8 +872,8 @@ nav {
 }
 @media screen and (max-width: 576px) {
   .foooter {
-    padding: 30px 0;
-    background-image: url(../../imges/Maskfmobayl.png);
+    padding: 32px 0;
+    background-image: url(../../imges/mmmmmmmmmmmm.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -897,5 +897,196 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     gap: 18px;
+  }
+}
+footer {
+  padding: 32px 0;
+  background-image: url(../../imges/fooooter.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: Space-between;
+  flex-wrap: wrap;
+}
+.footer__wrapper {
+  gap: 58px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer__list {
+  gap: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer__list--item {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+.footer__list1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 32px 0;
+    background-image: url(../../imges/tabletfooooter.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: Space-between;
+    flex-wrap: wrap;
+  }
+  .footer__wrapper {
+    gap: 58px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer__list {
+    gap: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer__list--item {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+  }
+  .footer__list1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer {
+    padding: 32px 0;
+    background-image: url(../../imges/mobayllfoooter.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: Space-between;
+    flex-wrap: wrap;
+  }
+  .footer__wrapper {
+    gap: 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer__list {
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer__list--item {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+  }
+  .footer__list1 {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 391px) {
+  footer {
+    max-width: 390px;
+    margin: 0 auto;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: Space-between;
+    flex-wrap: wrap;
+  }
+  .footer__wrapper {
+    gap: 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer__list {
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer__list--item {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+  }
+  .footer__list1 {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
   }
 }/*# sourceMappingURL=main.css.map */

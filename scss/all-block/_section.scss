@@ -617,7 +617,7 @@
 @media screen and (max-width:768px) {
     .foooter {
         margin-top: 104px;
-        padding: 62px 0;
+        padding: 40px 0;
         @include BG (url(../../imges/Maskfmobayl.png), no-repeat, 100%, center);
     }
     .hero3 {
@@ -635,8 +635,8 @@
 
 @media screen and (max-width:576px) {
     .foooter {
-        padding: 30px 0;
-        @include BG (url(../../imges/Maskfmobayl.png), no-repeat, 100%, center);
+        padding: 32px 0;
+        @include BG (url(../../imges/mmmmmmmmmmmm.png), no-repeat, 100%, center);
     }
     .hero3 {
         @include flexfunksiya (column, center, center, wrap);
@@ -648,6 +648,127 @@
         &__right {
             @include flexfunksiya (row, center, center, wrap);
             gap: 18px;
+        }
+    }
+}
+
+footer {
+    padding: 32px 0;
+    @include BG (url(../../imges/fooooter.png), no-repeat, 100%, center);
+}
+
+.footer {
+    @include flexfunksiya (row, center, Space-between, wrap);
+    &__wrapper {
+        gap: 58px;
+        @include flexfunksiya (row, center, center, wrap);
+    }
+    &__list {
+        gap: 32px;
+        @include flexfunksiya (row, center, center, wrap);
+        &--item {
+            font-family: $mono;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            color: $text-color;
+        }
+    }
+    &__list1 {
+        @include flexfunksiya (row, center, center, wrap);
+        gap: 24px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    footer {
+        padding: 32px 0;
+        @include BG (url(../../imges/tabletfooooter.png), no-repeat, 100%, center);
+    }
+    .footer {
+        @include flexfunksiya (row, center, Space-between, wrap);
+        &__wrapper {
+            gap: 58px;
+            @include flexfunksiya (row, center, center, wrap);
+        }
+        &__list {
+            gap: 32px;
+            @include flexfunksiya (row, center, center, wrap);
+            &--item {
+                font-family: $mono;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 25px;
+                color: $text-color;
+            }
+        }
+        &__list1 {
+            @include flexfunksiya (row, center, center, wrap);
+            gap: 24px;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    footer {
+        padding: 32px 0;
+        @include BG (url(../../imges/mobayllfoooter.png), no-repeat, 100%, center);
+    }
+    .footer {
+        @include flexfunksiya (column, center, Space-between, wrap);
+        &__wrapper {
+            gap: 58px;
+            @include flexfunksiya (column, center, center, wrap);
+        }
+        &__list {
+            gap: 32px;
+            @include flexfunksiya (column, center, center, wrap);
+            &--item {
+                font-family: $mono;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 25px;
+                color: $text-color;
+            }
+        }
+        &__list1 {
+            padding-top: 80px;
+            @include flexfunksiya (row, center, center, wrap);
+            gap: 24px;
+        }
+    }
+}
+
+@media screen and (max-width:391px) {
+    footer {
+        max-width: 390px;
+        margin: 0 auto;
+    }
+    .footer {
+        @include flexfunksiya (column, center, Space-between, wrap);
+        &__wrapper {
+            gap: 58px;
+            @include flexfunksiya (column, center, center, wrap);
+        }
+        &__list {
+            gap: 32px;
+            @include flexfunksiya (column, center, center, wrap);
+            &--item {
+                font-family: $mono;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 25px;
+                color: $text-color;
+            }
+        }
+        &__list1 {
+            padding-top: 80px;
+            @include flexfunksiya (row, center, center, wrap);
+            gap: 24px;
         }
     }
 }
