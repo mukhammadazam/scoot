@@ -203,7 +203,7 @@
         &__logo1 {
             display: block;
             position: absolute;
-            left: 102px;
+            left: 112px;
             top: 90px;
             z-index: -1;
         }
@@ -288,6 +288,15 @@
             line-height: 25px;
             color: $text-color;
         }
+        .odam1 {
+            display: none;
+        }
+        .bino1 {
+            display: none;
+        }
+        .xayon1 {
+            display: none;
+        }
     }
     &__logo {
         position: absolute;
@@ -330,9 +339,26 @@
 @media screen and (max-width:768px) {
     .hero2 {
         position: relative;
+        &__bttn {
+            max-width: 180px;
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
         &__list {
             padding-top: 83px;
             @include flexfunksiya (column, center, center, wrap);
+            .cart1 {
+                @include flexfunksiya (column-reverse, center, center, wrap);
+                flex-direction: column-reverse;
+            }
+            .cart2 {
+                @include flexfunksiya (column-reverse, center, center, wrap);
+            }
+            &--item {
+                max-width: 768px;
+                margin: 0 auto;
+            }
             .item-title1 {
                 font-family: $mono;
                 font-style: normal;
@@ -340,12 +366,13 @@
                 font-size: 48px;
                 line-height: 48px;
                 color: $headeding;
-                max-width: 500px;
+                max-width: 573px;
                 padding-bottom: 24px;
                 width: 100%;
+                text-align: center;
             }
             .item-text1 {
-                max-width: 500px;
+                max-width: 573px;
                 padding-bottom: 40px;
                 font-family: $desa;
                 font-style: normal;
@@ -353,43 +380,53 @@
                 font-size: 15px;
                 line-height: 25px;
                 color: $text-color;
+                text-align: center;
+            }
+            .titi {
+                padding-top: 64px;
             }
         }
+        .odam {
+            display: none;
+        }
         &__logo {
-            position: absolute;
-            top: 352px;
-            right: -197px;
-            z-index: 1;
+            display: none;
+        }
+        .bino {
+            display: none;
         }
         &__logo1 {
-            position: absolute;
-            top: 0px;
-            right: -195px;
+            display: none;
         }
         &__logo3 {
-            position: absolute;
-            top: 704px;
-            left: -210px;
+            display: none;
         }
         &__logo4 {
-            position: absolute;
-            top: 640px;
-            z-index: -1;
-            left: -210px;
+            display: none;
         }
         .xamyon {
-            border-radius: 50%;
+            display: none;
         }
         &__logo5 {
-            position: absolute;
-            top: 1200px;
-            right: -210px;
+            display: none;
         }
         &__logo6 {
-            z-index: -1;
-            position: absolute;
-            top: 1120px;
-            right: -210px;
+            display: none;
+        }
+        .odam1 {
+            display: block;
+            padding-bottom: 64px;
+        }
+        .bino1 {
+            display: block;
+            position: relative;
+            left: -65px;
+        }
+        .xamyon1 {
+            position: relative;
+            right: -69px;
+            display: block;
+            padding-bottom: 64px;
         }
     }
 }

@@ -20,6 +20,10 @@
   margin: 0 auto;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "Space Mono";
   src: url(../../fonts/SpaceMono-Regular.ttf);
@@ -373,7 +377,7 @@ nav {
   .hero1__logo1 {
     display: block;
     position: absolute;
-    left: 102px;
+    left: 112px;
     top: 90px;
     z-index: -1;
   }
@@ -472,6 +476,15 @@ nav {
   line-height: 25px;
   color: #939CAA;
 }
+.hero2__list .odam1 {
+  display: none;
+}
+.hero2__list .bino1 {
+  display: none;
+}
+.hero2__list .xayon1 {
+  display: none;
+}
 .hero2__logo {
   position: absolute;
   top: 352px;
@@ -513,6 +526,12 @@ nav {
   .hero2 {
     position: relative;
   }
+  .hero2__bttn {
+    max-width: 180px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
   .hero2__list {
     padding-top: 83px;
     display: flex;
@@ -521,6 +540,25 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
   }
+  .hero2__list .cart1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .hero2__list .cart2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero2__list--item {
+    max-width: 768px;
+    margin: 0 auto;
+  }
   .hero2__list .item-title1 {
     font-family: "Space Mono";
     font-style: normal;
@@ -528,12 +566,13 @@ nav {
     font-size: 48px;
     line-height: 48px;
     color: #495567;
-    max-width: 500px;
+    max-width: 573px;
     padding-bottom: 24px;
     width: 100%;
+    text-align: center;
   }
   .hero2__list .item-text1 {
-    max-width: 500px;
+    max-width: 573px;
     padding-bottom: 40px;
     font-family: "Lexend Deca";
     font-style: normal;
@@ -541,41 +580,51 @@ nav {
     font-size: 15px;
     line-height: 25px;
     color: #939CAA;
+    text-align: center;
+  }
+  .hero2__list .titi {
+    padding-top: 64px;
+  }
+  .hero2 .odam {
+    display: none;
   }
   .hero2__logo {
-    position: absolute;
-    top: 352px;
-    right: -197px;
-    z-index: 1;
+    display: none;
+  }
+  .hero2 .bino {
+    display: none;
   }
   .hero2__logo1 {
-    position: absolute;
-    top: 0px;
-    right: -195px;
+    display: none;
   }
   .hero2__logo3 {
-    position: absolute;
-    top: 704px;
-    left: -210px;
+    display: none;
   }
   .hero2__logo4 {
-    position: absolute;
-    top: 640px;
-    z-index: -1;
-    left: -210px;
+    display: none;
   }
   .hero2 .xamyon {
-    border-radius: 50%;
+    display: none;
   }
   .hero2__logo5 {
-    position: absolute;
-    top: 1200px;
-    right: -210px;
+    display: none;
   }
   .hero2__logo6 {
-    z-index: -1;
-    position: absolute;
-    top: 1120px;
-    right: -210px;
+    display: none;
+  }
+  .hero2 .odam1 {
+    display: block;
+    padding-bottom: 64px;
+  }
+  .hero2 .bino1 {
+    display: block;
+    position: relative;
+    left: -65px;
+  }
+  .hero2 .xamyon1 {
+    position: relative;
+    right: -69px;
+    display: block;
+    padding-bottom: 64px;
   }
 }/*# sourceMappingURL=main.css.map */
