@@ -18,6 +18,7 @@
   max-width: 1126px;
   width: 100%;
   margin: 0 auto;
+  padding: 10px 0;
 }
 
 body {
@@ -1045,9 +1046,20 @@ footer {
   }
 }
 @media screen and (max-width: 391px) {
+  .section1 {
+    overflow-x: hidden;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+    background-image: url(../../imges/Bitmapmobayl.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: end;
+  }
   footer {
     max-width: 390px;
     margin: 0 auto;
+    margin-bottom: 170px;
   }
   .footer {
     display: flex;
