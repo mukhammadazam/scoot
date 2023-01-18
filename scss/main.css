@@ -315,4 +315,11 @@ nav {
     bottom: -240px;
     left: -370px;
   }
+}
+@media screen and (max-width: 400px) {
+  .hero__flex--btn {
+    transform: translatex(0);
+    top: 190px;
+    left: 62px;
+  }
 }/*# sourceMappingURL=main.css.map */
