@@ -265,6 +265,7 @@
 .hero2 {
     position: relative;
     &__list {
+        padding-top: 83px;
         @include flexfunksiya (row, center, Space-between, wrap);
         .item-title1 {
             font-family: $mono;
@@ -298,5 +299,97 @@
         position: absolute;
         top: 0px;
         right: -195px;
+    }
+    &__logo3 {
+        position: absolute;
+        top: 704px;
+        left: -210px;
+    }
+    &__logo4 {
+        position: absolute;
+        top: 640px;
+        z-index: -1;
+        left: -210px;
+    }
+    .xamyon {
+        border-radius: 50%;
+    }
+    &__logo5 {
+        position: absolute;
+        top: 1200px;
+        right: -210px;
+    }
+    &__logo6 {
+        z-index: -1;
+        position: absolute;
+        top: 1120px;
+        right: -210px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero2 {
+        position: relative;
+        &__list {
+            padding-top: 83px;
+            @include flexfunksiya (column, center, center, wrap);
+            .item-title1 {
+                font-family: $mono;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 48px;
+                color: $headeding;
+                max-width: 500px;
+                padding-bottom: 24px;
+                width: 100%;
+            }
+            .item-text1 {
+                max-width: 500px;
+                padding-bottom: 40px;
+                font-family: $desa;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                color: $text-color;
+            }
+        }
+        &__logo {
+            position: absolute;
+            top: 352px;
+            right: -197px;
+            z-index: 1;
+        }
+        &__logo1 {
+            position: absolute;
+            top: 0px;
+            right: -195px;
+        }
+        &__logo3 {
+            position: absolute;
+            top: 704px;
+            left: -210px;
+        }
+        &__logo4 {
+            position: absolute;
+            top: 640px;
+            z-index: -1;
+            left: -210px;
+        }
+        .xamyon {
+            border-radius: 50%;
+        }
+        &__logo5 {
+            position: absolute;
+            top: 1200px;
+            right: -210px;
+        }
+        &__logo6 {
+            z-index: -1;
+            position: absolute;
+            top: 1120px;
+            right: -210px;
+        }
     }
 }
