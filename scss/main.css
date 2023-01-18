@@ -793,6 +793,106 @@ nav {
     display: block;
     position: absolute;
     top: 190px;
+    right: -80px;
+  }
+  .hero2 .bino2 {
+    display: block;
+  }
+  .hero2 .bino3 {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -80px;
+  }
+  .hero2 .xamyon2 {
+    display: block;
+    padding-bottom: 56px;
+  }
+  .hero2 .xamyon3 {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: -80px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero2 {
+    position: relative;
+  }
+  .hero2__bttn1 {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    border: none;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 14px 39px;
+    background: #FCB72B;
+  }
+  .hero2__list {
+    padding-top: 83px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero2__list .cart1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .hero2__list .cart2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero2__list--item {
+    margin: 0 auto;
+    position: relative;
+  }
+  .hero2__list .item-title1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .hero2__list .item-text1 {
+    max-width: 573px;
+    padding-bottom: 40px;
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    text-align: center;
+  }
+  .hero2__list .titi {
+    padding-top: 64px;
+  }
+  .hero2 .odam1 {
+    display: none;
+  }
+  .hero2 .bino1 {
+    display: none;
+  }
+  .hero2 .xamyon1 {
+    display: none;
+  }
+  .hero2 .odam2 {
+    display: block;
+    padding-bottom: 56px;
+  }
+  .hero2 .odam3 {
+    display: block;
+    position: absolute;
+    top: 190px;
     right: -35px;
   }
   .hero2 .bino2 {

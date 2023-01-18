@@ -565,6 +565,95 @@
             display: block;
             position: absolute;
             top: 190px;
+            right: -80px;
+        }
+        .bino2 {
+            display: block;
+        }
+        .bino3 {
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: -80px;
+        }
+        .xamyon2 {
+            display: block;
+            padding-bottom: 56px;
+        }
+        .xamyon3 {
+            display: block;
+            position: absolute;
+            top: 0px;
+            right: -80px;
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .hero2 {
+        position: relative;
+        &__bttn1 {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            border: none;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 14px 39px;
+            background: #FCB72B;
+        }
+        &__list {
+            padding-top: 83px;
+            @include flexfunksiya (column, center, center, wrap);
+            .cart1 {
+                @include flexfunksiya (column-reverse, center, center, wrap);
+                flex-direction: column-reverse;
+            }
+            .cart2 {
+                @include flexfunksiya (column-reverse, center, center, wrap);
+            }
+            &--item {
+                margin: 0 auto;
+                position: relative;
+            }
+            .item-title1 {
+                font-size: 32px;
+                line-height: 32px;
+            }
+            .item-text1 {
+                max-width: 573px;
+                padding-bottom: 40px;
+                font-family: $desa;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                color: $text-color;
+                text-align: center;
+            }
+            .titi {
+                padding-top: 64px;
+            }
+        }
+        .odam1 {
+            display: none;
+        }
+        .bino1 {
+            display: none;
+        }
+        .xamyon1 {
+            display: none;
+        }
+        .odam2 {
+            display: block;
+            padding-bottom: 56px;
+        }
+        .odam3 {
+            display: block;
+            position: absolute;
+            top: 190px;
             right: -35px;
         }
         .bino2 {
